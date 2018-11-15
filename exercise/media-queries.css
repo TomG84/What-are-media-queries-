@@ -1,0 +1,98 @@
+/* ================================================= 
+   Media Queries Lab Presentation
+==================================================== */
+
+/* Open a set of css rules ("break point") that, at 470px, makes the articles' text bigger*/
+
+
+/*///////////////Media Queries Challenge Starts Here /////////////////*/
+
+
+/* Open a set of css rules (or "break point") that will applay only when the screen is 575px wide */
+
+/* Within this breakpoint, make the group picture dissapear*/
+
+/* Within this breakpoint, make the header centralized, and give it a margin-bottom of 2.5 */
+
+/* Within this breakpoint the shall have a bottom on 0px */
+
+/* Within this breakpoint, all anchor-tags in the navbar shall have these properties: 
+
+  padding: 6px 0;
+  background: #def1f9;
+  margin: .2em 0;
+  
+  */
+
+/* //////////////////// END! See code below for ideas, if you need any ////////////////////////*/
+
+
+/*/////////////// Viewport for sizes 576px and up ////////////////*/
+
+/* Open a set of css rules that will applay only when the screen width is more than 575 px */
+@media (min-width: 576px) {
+
+  /* At this width, every <li> inside the nav-bar should display as an inline-block, with a margin top-bottom of 0, and a margin left-right of 0.45em */
+  nav li {
+    display: inline-block;
+    margin: 0 0.45em;
+  }
+
+  /* At this width, make the logo float to the left*/
+
+  .logo {
+    float: left;
+  }
+
+  /* At this width, the nav-bar should have a margin-top of 24px*/
+
+  nav {
+    margin-top: 24px;
+  }
+
+  /* At this width, all <h2's> in the webpage should have a margin bottom of 1.5em */
+
+  h2 {
+    margin-bottom: 1.5em;
+  }
+}
+
+/*/////////////////////  Target a viewport range wider than 575px, but narrower than 992px /////////////////////////////*/
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+  nav {
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+
+/*///////////////////////////// Target viewport sizes 768px and wider ///////////////////////////*/
+
+@media (min-width: 768px) {
+  .articles {
+    float: left;
+    width: 65%;
+  }
+
+  aside {
+    float: right;
+    width: 30%;
+  }
+}
+
+/* Target viewport sizes 992px and wider */
+
+@media (min-width: 992px) {
+  nav {
+    float: right;
+  }
+}
+
+
+
+
+
+/* max ~ from 0 to "here" */
+/* max ~ from "here to the top */
